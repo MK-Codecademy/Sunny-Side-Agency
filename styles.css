@@ -23,3 +23,12 @@
 .egg-and-cup .placeholder-text p {
   margin: 20px 0;
 }
+
+/*Footer social icons*/
+.social-links {
+  text-align: center;
+}
+
+.social-links img {
+  padding: 1rem;
+}
