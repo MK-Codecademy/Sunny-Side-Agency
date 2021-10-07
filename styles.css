@@ -1,0 +1,25 @@
+/*Global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Transform and Stand Out cards*/
+.egg-and-cup {
+  width: 100vw;
+}
+
+.egg-and-cup img {
+  width: 100%;
+}
+
+.egg-and-cup .placeholder-text {
+  width: 100%;
+  padding: 4rem 30px;
+  text-align: center;
+}
+
+.egg-and-cup .placeholder-text p {
+  margin: 20px 0;
+}
