@@ -61,9 +61,30 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 .egg-and-cup .placeholder-text {
   width: 100%;
   padding: 4rem 30px;
-  text-align: center;
+  text-align: center
 }
 
 .egg-and-cup .placeholder-text p {
   margin: 20px 0;
+  color: hsl(210, 4%, 67%);
+  font-size: 18px;
+}
+
+/*Wrapper testimonials*/
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5%;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
