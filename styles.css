@@ -2,7 +2,51 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* Style Guide classes */
+
+/* Colors */
+/* To use, add the name between the brackets of var() i.e. color: var(--softred); or background-color: var(--dark-desaturated-cyan); */
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --dark-grayish-blue: hsl(213, 9%, 39%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+
+/* To use, simply add the class name to the HTML you wish to style with that particular font/weight
+i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font weight of 700</p> */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+.font-Barlow {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.font-Fraunces-700 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.font-Fraunces-900 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 18px;
 }
 
 /*Transform and Stand Out cards*/
@@ -17,11 +61,12 @@
 .egg-and-cup .placeholder-text {
   width: 100%;
   padding: 4rem 30px;
-  text-align: center;
+  text-align: center
 }
 
 .egg-and-cup .placeholder-text p {
   margin: 20px 0;
+<<<<<<< HEAD
 }
 
 /*Footer social icons*/
@@ -31,4 +76,27 @@
 
 .social-links img {
   padding: 1rem;
+=======
+  color: hsl(210, 4%, 67%);
+  font-size: 18px;
+}
+
+/*Wrapper testimonials*/
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5%;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+>>>>>>> 7e2701cf95213dc896ae2f64fb7df2b675e7d755
 }
