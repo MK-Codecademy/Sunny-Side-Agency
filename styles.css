@@ -1,3 +1,4 @@
+@import url(modern-normalize.css);
 /*Global styles*/
 * {
   margin: 0;
@@ -28,23 +29,23 @@
 /* To use, simply add the class name to the HTML you wish to style with that particular font/weight
 i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font weight of 700</p> */
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
 .font-Barlow {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 
 .font-Fraunces-700 {
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   font-weight: 700;
   font-size: 18px;
 }
 
 .font-Fraunces-900 {
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: 18px;
 }
@@ -61,7 +62,7 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 .egg-and-cup .placeholder-text {
   width: 100%;
   padding: 4rem 30px;
-  text-align: center
+  text-align: center;
 }
 
 .egg-and-cup .placeholder-text p {
@@ -71,20 +72,85 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 }
 
 /*Wrapper testimonials*/
-.column{
+.column {
   float: left;
   width: 33.33%;
   padding: 5%;
 }
 
-.row:after{
-  content: "";
+.row:after {
+  content: '';
   display: table;
   clear: both;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+}
+
+/* 6 footer - Ife - I use utility classes i.e. if i want padding 8rem i call my class p-8 */
+
+.text-center {
+  text-align: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.container .text-lg {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.b-2 {
+  border: 2px solid black;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.max-w-2xl {
+  max-width: 48rem;
+}
+.m-4 {
+  margin: 2rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-2 {
+  margin: 1rem;
+}
+
+.bg-light-green {
+  background-color: hsl(167, 47%, 65%);
+}
+
+.text-green {
+  color: hsl(167, 40%, 24%);
+}
+
+.font-bold {
+  font-weight: 700;
 }
