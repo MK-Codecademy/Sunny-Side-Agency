@@ -50,6 +50,21 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   font-size: 18px;
 }
 
+
+/*Header*/
+header {
+  background-color: red; /*this can be removed when orange image added*/
+  padding: 2rem; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+/*this will be removed when the burger menu is completed*/
+header ul {
+  display: none;
+}
+
+
 /*Transform and Stand Out cards*/
 .egg-and-cup {
   width: 100vw;
