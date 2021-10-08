@@ -1,4 +1,6 @@
 @import url(modern-normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 /*Global styles*/
 * {
   margin: 0;
@@ -29,9 +31,6 @@
 /* To use, simply add the class name to the HTML you wish to style with that particular font/weight
 i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font weight of 700</p> */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
-
 .font-Barlow {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
@@ -47,7 +46,7 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 .font-Fraunces-900 {
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 32px;
 }
 
 /*Transform and Stand Out cards*/
@@ -55,20 +54,45 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   width: 100vw;
 }
 
-.egg-and-cup img {
-  width: 100%;
-}
+/*Desktop Breakpoint*/
+@media screen and (min-width: 1440px) {
+  .egg-and-cup {
+    display: flex;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .egg-and-cup img {
+    width: 50vw;
+  }
+  .egg-and-cup .placeholder-text {
+    width: 50vw;
+    padding: 8rem;
+    text-align: left;
+    margin: auto;
+  }
 
-.egg-and-cup .placeholder-text {
-  width: 100%;
-  padding: 4rem 30px;
-  text-align: center;
+}
+/*Mobile Breakpoint*/
+@media screen and (max-width: 1440px) {
+  .egg-and-cup img {
+    width: 100%;
+  }
+  .egg-and-cup .placeholder-text {
+    width: 100%;
+    padding: 4rem 30px;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .egg-and-cup .placeholder-text p {
   margin: 20px 0;
   color: hsl(210, 4%, 67%);
-  font-size: 18px;
+}
+
+.egg-and-cup .placeholder-text a {
+  border-bottom: 5px inset #FBF0B8; /* Will offset border later */
 }
 
 /*Wrapper testimonials*/
