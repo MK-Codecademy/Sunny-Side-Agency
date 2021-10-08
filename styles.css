@@ -154,3 +154,7 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 .font-bold {
   font-weight: 700;
 }
+
+.hover\:text-white:hover {
+  color: white;
+}
