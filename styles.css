@@ -114,13 +114,20 @@ header ul {
 }
 
 .flex-item img{
-  border-radius: 60%;
-  margin: 20%;
+  border-radius: 50%;
+  margin: 2rem;
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: %;
+}
+
+.flex-item .name{
+  margin-top: 2rem;
+}
+
+.flex-item .job{
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -128,7 +135,7 @@ header ul {
     width: 100%;
   }
   .flex-item img{
-    width: 35%;
+    width: 20%;
   }
 }
 
