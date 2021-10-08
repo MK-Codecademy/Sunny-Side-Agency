@@ -76,6 +76,11 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   float: left;
   width: 33.33%;
   padding: 5%;
+  text-align: center;
+}
+
+.column img {
+  border-radius: 50%;
 }
 
 .row:after {
