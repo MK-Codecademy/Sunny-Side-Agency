@@ -71,6 +71,24 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   font-size: 18px;
 }
 
+/*Graphic Design and Photography Cards*/
+.graphic-and-photo {
+  position: relative;
+}
+
+.graphic-and-photo .placeholder-text {
+  position: absolute;
+  bottom: 12%;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.graphic-and-photo .placeholder-text h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+
 /*Wrapper testimonials*/
 .column {
   float: left;
