@@ -107,7 +107,21 @@ header ul {
 }
 
 .egg-and-cup .placeholder-text a {
-  border-bottom: 5px inset #FBF0B8; /* Will offset border later */
+  position: relative;
+  top: 10px;
+  margin: 0 10px;
+}
+
+.egg-and-cup-link-wrapper {
+  display: inline-grid;
+}
+
+.link-underline-egg {
+  border-bottom: 10px solid #FBF0B8; /* Will offset border later */
+}
+
+.link-underline-cup {
+  border-bottom: 10px solid #FFDAD2; /* Will offset border later */
 }
 
 /*Graphic Design and Photography Cards*/
@@ -201,8 +215,6 @@ header ul {
 
   .desktop-quad {
     display: none;
-<<<<<<< Updated upstream
-=======
   }
 }
 
@@ -229,11 +241,6 @@ header ul {
     max-width: 50%;
   }
 }
-=======
-
->>>>>>> 44b6bb32eba01e43b82500db37a8687579bfef69
-
-
 
 /* 6 footer - Ife - I use utility classes i.e. if i want padding 8rem i call my class p-8 */
 
