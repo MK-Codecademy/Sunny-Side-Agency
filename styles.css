@@ -31,6 +31,11 @@
 /* To use, simply add the class name to the HTML you wish to style with that particular font/weight
 i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font weight of 700</p> */
 
+/* smooth scroll for the arrow*/
+html {
+  scroll-behavior: smooth;
+}
+
 .font-Barlow {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
@@ -51,11 +56,37 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 
 
 /*Header*/
-header {
-  background-color: red; /*this can be removed when orange image added*/
+header { 
+  width: 100vw;
   padding: 2rem; 
   align-items: center;
   justify-content: space-between; 
+}
+
+/* orange background image*/
+.hero{
+ background: lightblue url("images/mobile/image-header.jpg") no-repeat center;
+ background-size: cover; 
+ height: 100vh;
+}
+
+/* aligning header and arrow*/
+.hero h1{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20vh;
+  margin-bottom:12vh;
+  color: var(--white);
+  letter-spacing: 0.5rem;
+  max-width: 70vw;
+  text-align: center;
+}
+
+/* bg-image changes to desktop version at 677px */
+@media only screen and (min-width: 677px) {
+  .hero {
+    background-image: url("images/desktop/image-header.jpg");
+  }
 }
 
 /*this will be removed when the burger menu is completed*/
