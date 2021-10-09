@@ -219,30 +219,6 @@ header ul {
   }
 }
 
-/*Quad Pic Section flex*/
-
-.quad-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.quad-wrapper > div {
-  width: 100%;
-  max-width: 25%;
-  border: 1px
-}
-
-.rowquad {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  .quad-wrapper > div{
-    max-width: 50%;
-  }
-}
-
 /* 6 footer - Ife - I use utility classes i.e. if i want padding 8rem i call my class p-8 */
 
 .text-center {
