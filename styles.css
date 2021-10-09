@@ -52,7 +52,9 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 
 /*Header*/
 header {
-  background-color: red; /*this can be removed when orange image added*/
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   padding: 2rem; 
   align-items: center;
   justify-content: space-between; 
@@ -61,6 +63,40 @@ header {
 /*this will be removed when the burger menu is completed*/
 header ul {
   display: none;
+}
+
+
+/*Hero section*/
+.hero {
+  position: relative;
+  z-index: 0;
+}
+
+#hero-img {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  max-width: 90vw;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  font-size: 2rem;
+  letter-spacing: 0.7rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#hero-arrow {
+  position: absolute;
+  bottom: 20%;
+  z-index: 1;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 
