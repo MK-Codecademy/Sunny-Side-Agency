@@ -206,7 +206,6 @@ header ul {
   }
 }
 
-<<<<<<< HEAD
 /*Quad Pic Section flex*/
 
 .quad-wrapper {
@@ -228,7 +227,6 @@ header ul {
 @media only screen and (max-width: 600px) {
   .quad-wrapper > div{
     max-width: 50%;
->>>>>>> Stashed changes
   }
 }
 =======
