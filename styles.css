@@ -174,13 +174,19 @@ header ul {
 
 
 /*Wrapper testimonials*/
+.profile-section { 
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .column {
   padding-bottom: 10%;
   float: left;
   justify-content: center;
   flex-flow: row wrap;
   width: 33.33%;
-  padding: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .row:after {
@@ -190,11 +196,11 @@ header ul {
 }
 
 .testimonials{
-  font-size: 20px;
-  font-weight: bold;
   text-align: center;
   padding-top: 10%;
-  color: hsl(210, 4%, 67%);
+  padding-bottom: 5%;
+  color: var(--grayish-blue);
+  letter-spacing: 4px;
 }
 
 .flex-item {
@@ -210,20 +216,39 @@ header ul {
   margin-right: auto;
 }
 
+.flex-item .review{
+  color: var(--dark-grayish-blue);
+  font-weight: bolder;
+}
+
 .flex-item .name{
   margin-top: 2rem;
-  color: black;
-  font-weight: bold;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
 }
 
 .flex-item .job{
-  margin-top: 0.2rem;
-  color: hsl(210, 4%, 67%);
+  margin-top: 0.4rem;
+  color: var(--grayish-blue);
+  font-size: smaller;
 }
 
 @media screen and (max-width: 600px) {
+  .profile-section { 
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .column {
     width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .testimonials {
+    padding-top: 15%;
+    padding-bottom: 10%;
   }
 }
 
