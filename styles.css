@@ -49,6 +49,21 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   font-size: 32px;
 }
 
+
+/*Header*/
+header {
+  background-color: red; /*this can be removed when orange image added*/
+  padding: 2rem; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+/*this will be removed when the burger menu is completed*/
+header ul {
+  display: none;
+}
+
+
 /*Transform and Stand Out cards*/
 .egg-and-cup {
   width: 100vw;
@@ -97,7 +112,10 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
 
 /*Wrapper testimonials*/
 .column {
+  padding-bottom: 10%;
   float: left;
+  justify-content: center;
+  flex-flow: row wrap;
   width: 33.33%;
   padding: 5%;
 }
@@ -108,12 +126,42 @@ i.e. <p class="font-Fraunces-700">This text will be in Fraunces font with a font
   clear: both;
 }
 
+.testimonials{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(210, 4%, 67%);
+}
+
+.flex-item {
+  text-align: center;
+}
+
+.flex-item img{
+  border-radius: 50%;
+  margin: 2rem;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-item .name{
+  margin-top: 2rem;
+}
+
+.flex-item .job{
+  margin-top: 0.5rem;
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+  .flex-item img{
+    width: 20%;
+  }
 }
-
 
 /* 6 footer - Ife - I use utility classes i.e. if i want padding 8rem i call my class p-8 */
 
