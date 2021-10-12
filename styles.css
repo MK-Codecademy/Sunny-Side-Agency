@@ -148,7 +148,6 @@ header {
   }
   .egg-and-cup img {
     width: 50vw;
-
   }
   .egg-and-cup .placeholder-text {
     float: right;
@@ -197,15 +196,27 @@ header {
 
 /*Graphic Design and Photography Cards*/
 .graphic-and-photo {
+  display: flex;
+  width: 50%;
+  float: left;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 10rem;
+}
+
+.graphic-and-photo img {
   position: relative;
-  
+  width: 100%;
 }
 
 .graphic-and-photo .placeholder-text {
+  float: left;
+  width: 50vw;
+  padding: 8rem;
+  text-align: left;
+  margin: auto;
   position: absolute;
-  bottom: 12%;
-  margin: 0 2rem;
-  text-align: center;
+  align-self: flex-end;
 }
 
 .graphic-and-photo .placeholder-text h3 {
@@ -215,7 +226,7 @@ header {
 
 
 /*Wrapper testimonials*/
-.profile-section { 
+.profile-section {
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
