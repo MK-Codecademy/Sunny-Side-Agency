@@ -201,7 +201,6 @@ header {
   float: left;
   justify-content: center;
   flex-flow: row wrap;
-  padding-bottom: 10rem;
 }
 
 .graphic-and-photo img {
@@ -212,11 +211,12 @@ header {
 .graphic-and-photo .placeholder-text {
   float: left;
   width: 50vw;
-  padding: 8rem;
+  padding: 4rem;
   text-align: center;
   margin: auto;
   position: absolute;
   align-self: flex-end;
+  color: var(--dark-grayish-blue);
 }
 
 .graphic-and-photo .placeholder-text h3 {
@@ -224,9 +224,21 @@ header {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1440px) {
+  .graphic-and-photo {
+    width: 100%;
+  }
+
+  .graphic-and-photo .placeholder-text {
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
 
 /*Wrapper testimonials*/
 .profile-section {
+  padding-top: 40%;
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -285,11 +297,10 @@ header {
   font-size: smaller;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-section { 
+@media screen and (max-width: 800px) {
+  .profile-section {
+    padding-top: 40%;
     margin-bottom: 2rem;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .column {
@@ -303,6 +314,7 @@ header {
     padding-bottom: 10%;
   }
 }
+
 
 /* Quad Pic Section */
 
