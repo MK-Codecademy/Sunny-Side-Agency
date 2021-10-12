@@ -139,14 +139,19 @@ header {
 @media screen and (min-width: 1440px) {
   .egg-and-cup {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .reverse {
     flex-direction: row-reverse;
   }
   .egg-and-cup img {
     width: 50vw;
+
   }
   .egg-and-cup .placeholder-text {
+    float: right;
     width: 50vw;
     padding: 8rem;
     text-align: left;
@@ -161,7 +166,7 @@ header {
   }
   .egg-and-cup .placeholder-text {
     width: 100%;
-    padding: 4rem 30px;
+    padding: 30% 30px;
     text-align: center;
     margin: auto;
   }
@@ -193,6 +198,7 @@ header {
 /*Graphic Design and Photography Cards*/
 .graphic-and-photo {
   position: relative;
+  
 }
 
 .graphic-and-photo .placeholder-text {
