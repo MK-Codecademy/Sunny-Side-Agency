@@ -160,16 +160,29 @@ header ul {
   position: relative;
 }
 
-.graphic-and-photo .placeholder-text {
+.graphic-and-photo .text {
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   margin: 0 2rem;
   text-align: center;
 }
 
-.graphic-and-photo .placeholder-text h3 {
+.graphic-and-photo .text h3 {
   font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.graphic-and-photo .text p {
+  font-size: 1rem;
   margin-bottom: 15px;
+}
+
+.cherries {
+  color: var(--dark-desaturated-cyan)
+}
+
+.tangerine {
+  color: var(--dark-blue);
 }
 
 
