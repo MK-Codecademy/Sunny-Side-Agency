@@ -57,7 +57,6 @@ html {
 
 /*Header*/
 header { 
-  width: 100vw;
   padding: 2rem;
   align-items: center;
   justify-content: space-between; 
@@ -135,14 +134,7 @@ header {
   }
 }
 
-
-
-
 /*Transform and Stand Out cards*/
-.egg-and-cup {
-  width: 100vw;
-}
-
 /*Desktop Breakpoint*/
 @media screen and (min-width: 1440px) {
   .egg-and-cup {
@@ -341,6 +333,14 @@ header {
 
 .p-4 {
   padding: 2rem;
+}
+
+.pt-4 {
+  padding-top: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 2rem;
 }
 
 .flex {
