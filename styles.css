@@ -136,47 +136,58 @@ header {
 
 /*Transform and Stand Out cards*/
 /*Desktop Breakpoint*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1056px) {
   .egg-and-cup {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  }
+  .egg-image {
+    width: 50%;
+    background: lightblue url("./images/mobile/image-transform.jpg") no-repeat center;
+    background-size: cover;
+    height: 60vh;
+  }
+  .cup-image {
+    width: 50%;
+    background: lightblue url("./images/mobile/image-stand-out.jpg") no-repeat center;
+    background-size: cover;
+    height: 60vh;
   }
   .reverse {
     flex-direction: row-reverse;
   }
-  .egg-and-cup img {
-    width: 50vw;
-  }
-  .egg-and-cup .placeholder-text {
-    float: right;
-    width: 50vw;
-    padding: 8rem;
+  .egg-and-cup-text {
+    width: 50%;
+    padding: 7rem;
     text-align: left;
     margin: auto;
   }
-
 }
+
 /*Mobile Breakpoint*/
-@media screen and (max-width: 1440px) {
-  .egg-and-cup img {
-    width: 100%;
+@media screen and (max-width: 1056px) {
+  .egg-image {
+    background: #ffd602 url("./images/mobile/image-transform.jpg") no-repeat center;
+    background-size: contain;
+    height: 28vh;
   }
-  .egg-and-cup .placeholder-text {
-    width: 100%;
-    padding: 30% 30px;
+  .cup-image {
+    background:#fd6d60 url("./images/mobile/image-stand-out.jpg") no-repeat center;
+    background-size: contain;
+    height: 28vh;
+  }
+  .egg-and-cup-text {
+    padding: 6rem 2rem;
     text-align: center;
     margin: auto;
   }
 }
 
-.egg-and-cup .placeholder-text p {
+.egg-and-cup-text p {
   margin: 20px 0;
   color: hsl(210, 4%, 67%);
 }
 
-.egg-and-cup .placeholder-text a {
+.egg-and-cup-text a {
   position: relative;
   top: 10px;
   margin: 0 10px;
@@ -187,11 +198,11 @@ header {
 }
 
 .link-underline-egg {
-  border-bottom: 10px solid #FBF0B8; /* Will offset border later */
+  border-bottom: 10px solid #FBF0B8;
 }
 
 .link-underline-cup {
-  border-bottom: 10px solid #FFDAD2; /* Will offset border later */
+  border-bottom: 10px solid #FFDAD2;
 }
 
 /*Graphic Design and Photography Cards*/
