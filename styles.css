@@ -198,24 +198,36 @@ header {
 }
 
 .link-underline-egg {
-  border-bottom: 10px solid #FBF0B8; /* Will offset border later */
+  border-bottom: 10px solid #FBF0B8;
 }
 
 .link-underline-cup {
-  border-bottom: 10px solid #FFDAD2; /* Will offset border later */
+  border-bottom: 10px solid #FFDAD2;
 }
 
 /*Graphic Design and Photography Cards*/
 .graphic-and-photo {
+  display: flex;
+  width: 50%;
+  float: left;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.graphic-and-photo img {
   position: relative;
-  
+  width: 100%;
 }
 
 .graphic-and-photo .placeholder-text {
-  position: absolute;
-  bottom: 12%;
-  margin: 0 2rem;
+  float: left;
+  width: 50vw;
+  padding: 4rem;
   text-align: center;
+  margin: auto;
+  position: absolute;
+  align-self: flex-end;
+  color: var(--dark-grayish-blue);
 }
 
 .graphic-and-photo .placeholder-text h3 {
@@ -223,9 +235,21 @@ header {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1440px) {
+  .graphic-and-photo {
+    width: 100%;
+  }
+
+  .graphic-and-photo .placeholder-text {
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
 
 /*Wrapper testimonials*/
-.profile-section { 
+.profile-section {
+  padding-top: 40%;
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -284,11 +308,10 @@ header {
   font-size: smaller;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-section { 
+@media screen and (max-width: 800px) {
+  .profile-section {
+    padding-top: 40%;
     margin-bottom: 2rem;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .column {
@@ -302,6 +325,7 @@ header {
     padding-bottom: 10%;
   }
 }
+
 
 /* Quad Pic Section */
 
