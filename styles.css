@@ -71,7 +71,6 @@ nav {
 
 #contact-a {
   border-radius: 30px;
-  padding: 0.8rem 1.2rem;
 }
 
 /* header for desktop */
@@ -102,6 +101,7 @@ nav {
     color: var(--very-dark-desaturated-blue);
     font-size: x-small;
     float: right;
+    padding: 0.8rem 1.2rem;
   }
 }
 
@@ -130,6 +130,7 @@ nav {
     background-color: var(--yellow);
     color: black;
     font-size: small;
+    padding: 1.2rem 2rem;
   }
 
   #burger-icon {
