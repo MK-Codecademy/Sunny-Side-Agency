@@ -186,21 +186,15 @@ nav {
   .egg-and-cup {
     display: flex;
   }
-  .egg-image {
-    width: 50%;
-    background: lightblue url("./images/mobile/image-transform.jpg") no-repeat center;
-    background-size: cover;
-    height: 60vh;
-  }
-  .cup-image {
-    width: 50%;
-    background: lightblue url("./images/mobile/image-stand-out.jpg") no-repeat center;
-    background-size: cover;
-    height: 60vh;
-  }
+
   .reverse {
     flex-direction: row-reverse;
   }
+
+  .egg-and-cup-image {
+    width: 50%;
+  }
+
   .egg-and-cup-text {
     width: 50%;
     padding: 7rem;
@@ -211,16 +205,14 @@ nav {
 
 /*Mobile Breakpoint*/
 @media screen and (max-width: 1056px) {
-  .egg-image {
-    background: #ffd602 url("./images/mobile/image-transform.jpg") no-repeat center;
-    background-size: contain;
-    height: 28vh;
+  .egg-and-cup {
+    width: 100vw;
   }
-  .cup-image {
-    background:#fd6d60 url("./images/mobile/image-stand-out.jpg") no-repeat center;
-    background-size: contain;
-    height: 28vh;
+
+  .egg-and-cup-image {
+    width: 100vw;
   }
+
   .egg-and-cup-text {
     padding: 6rem 2rem;
     text-align: center;
