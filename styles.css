@@ -57,6 +57,8 @@ html {
 
 /*Header*/
 header { 
+
+  width: 100vw;
   padding: 2rem;
   align-items: center;
   justify-content: space-between; 
@@ -144,6 +146,52 @@ nav {
     color: black;
     font-size: small;
     padding: 1.2rem 2rem;
+  }
+
+  #burger-icon {
+    display:normal
+  }
+}
+
+/* header for desktop */
+@media screen and (min-width: 600px) {
+  #burger-icon {
+    visibility: hidden;
+  }
+
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .menu {
+    display:flex;
+    color: var(--white);
+    font-size: smaller;
+    padding-right:1rem;
+  }
+
+  .navbar .menu li a {
+    padding:1rem;
+  }
+
+  #contact-a {
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-blue);
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem;
+
+    font-size: x-small;
+    float:right;
+  }
+}
+
+/* header for mobile */
+@media screen and (max-width: 600px) {
+  header .navbar .menu,
+  header .navbar a {
+    display: none;
   }
 
   #burger-icon {
