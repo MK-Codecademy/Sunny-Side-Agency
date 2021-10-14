@@ -33,13 +33,13 @@
   <section class="hero flex flex-col">
     <header class="flex">
       <img src="./images/logo.svg" alt="Sunny Side Agency Logo" id="sunny-logo" />
-      <nav>
-        <img src="images/icon-hamburger.svg" alt="menu drop down" id="burger-icon" />
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+      <nav class="navbar">
+        <div id="burger-icon"><img src="images/icon-hamburger.svg" alt="menu drop down"  /></div>
+        <ul class='menu font-Barlow' id="nav-menu">
+          <li><a id='about-a' href="#about">About</a></li>
+          <li><a id='services-a' href="#services">Services</a></li>
+          <li><a id='projects-a' href="#projects">Projects</a></li>
+          <li><a class="font-Fraunces-900" id='contact-a' href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -50,14 +50,12 @@
       
   </section>
 
-
+  
+  <section>
     <!-- Egg, Second Header, Paragraph and Link -->
-    <div class="egg-and-cup reverse" id="egg-and-cup">
-      <img
-        src="./images/mobile/image-transform.jpg"
-        alt="egg on yellow background"
-      />
-      <div class="placeholder-text">
+    <div class="egg-and-cup">
+      <img class="egg-and-cup-image" src="./images/mobile/image-transform.jpg" alt="egg on yellow background">
+      <div class="egg-and-cup-text">
         <h2 class="font-Fraunces-900">Transform your brand</h2>
         <p class="font-Barlow">
           We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
@@ -69,14 +67,10 @@
       </div>
     </div>
 
-
     <!-- Pink Cup, Second Header, Paragraph and Link -->
-    <div class="egg-and-cup">
-      <img
-        src="./images/mobile/image-stand-out.jpg"
-        alt="cup on pink background"
-      />
-      <div class="placeholder-text">
+    <div class="egg-and-cup reverse">
+      <img class="egg-and-cup-image" src="./images/mobile/image-stand-out.jpg" alt="cup on pink background">
+      <div class="egg-and-cup-text">
         <h2 class="font-Fraunces-900">Stand out to the right audience</h2>
         <p class="font-Barlow">
           Using a collaborative formula of designers, researchers, photographers, videographers and copywriters we'll build and extend your brand in digital places.
@@ -86,9 +80,7 @@
           <span class="link-underline-cup"></span>
         </div>
       </div>
-      </div>
-    </div>
-
+  </section>
 
 
   <!-- Cherries, Second Header, Paragraph -->
@@ -114,7 +106,8 @@
 
   <!-- Profile Section, Headline, Profile Picture, paragraph, Bolded Name, Standard Text title, paragraph -->
   <div class="profile-section">
-  <div class="testimonials font-Fraunces-700">CLIENT TESTIMONIALS</div>
+    <div class="testimonials font-Fraunces-700">
+      <h3>CLIENT TESTIMONIALS</h3></div>
 
   <div class="row">
     <div class="column">
@@ -171,7 +164,7 @@
   <!-- Footer with social Links - IfeOdy-->
   <section class="footer bg-light-green">
     <footer class="flex justify-center">
-      <div class="container max-w-2xl p-4 flex flex-col text-center">
+      <div class="container max-w-2xl pt-4 pb-4 flex flex-col text-center">
         <div class="flex justify-center m-2">
           <svg class="text-green" width="124" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -235,6 +228,9 @@
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">MK
       Chapter Codecademy</a>.
   </div>
+
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
