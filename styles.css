@@ -257,10 +257,10 @@ nav {
   width: 100%;
 }
 
-.graphic-and-photo .placeholder-text {
-  float: left;
-  width: 50vw;
-  padding: 4rem;
+.graphic-and-photo .text {
+  position: absolute;
+  bottom: 8%;
+  margin: 0 2rem;
   text-align: center;
   margin: auto;
   position: absolute;
@@ -268,26 +268,23 @@ nav {
   color: var(--dark-grayish-blue);
 }
 
-.graphic-and-photo .placeholder-text h3 {
+.graphic-and-photo .text h3 {
   font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.graphic-and-photo .text p {
+  font-size: 1rem;
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 800px) {
-  .graphic-and-photo {
-    width: 100%;
-  }
+.cherries {
+  color: var(--dark-desaturated-cyan)
+}
 
-  .graphic-and-photo .placeholder-text h3 {
-    font-size: 5vw;
-    text-align: center;
-    margin-bottom: 15px;
-  }
+.tangerine {
+  color: var(--dark-blue);
 
-  .graphic-and-photo .placeholder-text {
-    font-size: 3vw;
-    padding: 1rem;
-  }
 }
 
 
