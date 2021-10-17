@@ -301,12 +301,13 @@ nav {
     width: 100vw;
     padding: 2rem;
     padding-top: 25rem;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
     text-align: center;
     margin: auto;
     position: absolute;
     align-self: flex-end;
     color: var(--dark-grayish-blue);
+    font-size: 1rem;
 }
 
   .graphic-and-photo-mobile .placeholder-text h3 {
@@ -403,7 +404,7 @@ nav {
 
   .profile-section .testimonials h3{
     padding-top: 60vw;
-    margin-top: 80rem;
+    margin-top: 60rem;
   }
 }
 
