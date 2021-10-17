@@ -299,8 +299,9 @@ nav {
   .graphic-and-photo-mobile .placeholder-text {
     float: left;
     width: 100vw;
-    padding: 4rem;
-    padding-top: 30rem;
+    padding: 2rem;
+    padding-top: 25rem;
+    margin-bottom: 10rem;
     text-align: center;
     margin: auto;
     position: absolute;
@@ -348,7 +349,7 @@ nav {
 
 .profile-section .testimonials h3{
   text-align: center;
-  padding-top: 50%;
+  padding-top: 40%;
   color: var(--grayish-blue);
   letter-spacing: 4px;
 }
@@ -401,10 +402,8 @@ nav {
   }
 
   .profile-section .testimonials h3{
-    text-align: center;
-    margin-top: 10rem;
-    color: var(--grayish-blue);
-    letter-spacing: 4px;
+    padding-top: 60vw;
+    margin-top: 80rem;
   }
 }
 
