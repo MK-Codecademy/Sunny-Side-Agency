@@ -273,24 +273,47 @@ nav {
   margin-bottom: 15px;
 }
 
+/*mobile graphic */
+.graphic-and-photo-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .graphic-and-photo {
+    display: none;
+  }
+
+  .graphic-and-photo-mobile{
+    display: flex;
+    width: 100%;
+    float: left;
+    justify-content: center;
+    flex-flow: column;
+  }
+
+  .graphic-and-photo-mobile img {
+    position: relative;
     width: 100%;
   }
 
-  .graphic-and-photo .placeholder-text h3 {
-    font-size: 5vw;
+  .graphic-and-photo-mobile .placeholder-text {
+    float: left;
+    width: 100vw;
+    padding: 4rem;
+    padding-top: 30rem;
     text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .graphic-and-photo .placeholder-text {
-    font-size: 3vw;
-    padding: 1rem;
-    width: 80%;
-  }
+    margin: auto;
+    position: absolute;
+    align-self: flex-end;
+    color: var(--dark-grayish-blue);
 }
 
+  .graphic-and-photo-mobile .placeholder-text h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 
 /*Wrapper testimonials*/
 .profile-section {
@@ -379,7 +402,7 @@ nav {
 
   .profile-section .testimonials h3{
     text-align: center;
-    margin-top: 80%;
+    margin-top: 10rem;
     color: var(--grayish-blue);
     letter-spacing: 4px;
   }
